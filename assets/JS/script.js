@@ -20,7 +20,7 @@ btnAgregar.addEventListener("click", () => {
   const nombreTarea = tareaInput.value;
   if (nombreTarea === "") {
     // Si el input está vacío, mostramos un mensaje de error
-    alert("No has escrito ninguna tarea");
+    alert("Debes escribir una tarea para poder asignarla.");
     return; // Salimos de la función para evitar agregar una tarea vacía
   }
   // Obtener el ID de la última tarea agregada
