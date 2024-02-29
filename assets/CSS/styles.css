@@ -1,6 +1,6 @@
 /* Imagen de fondo */
 body {
-  background-image: url("/assets/img/fondo.jpg");
+  background-image: url("/assets/img/background.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
