@@ -1,0 +1,99 @@
+/* Imagen de fondo */
+body {
+  background-image: url("/assets/img/fondo.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* Centra el contenido verticalmente */
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+/* Estilo del área de la lista de tareas */
+.to-do {
+  padding: 3rem;
+  border: 0.2rem solid black;
+  border-radius: 1rem;
+  width: 70%;
+  max-width: 80rem;
+  /* Glassmorphism */
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 1.6rem;
+  box-shadow: 0 0.4rem 3rem rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0.5rem);
+  -webkit-backdrop-filter: blur(0.5rem);
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Color de fondo con opacidad del 80% */
+}
+
+/* Estilo del campo de entrada de nueva tarea */
+.input input {
+  width: calc(100% - 10rem); /* Tamaño del input ajustado para el botón */
+  height: 3rem;
+  padding: 0.5rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+}
+
+/* Estilo del botón de agregar tarea */
+.input button {
+  height: 3rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: darkgreen;
+  color: white;
+  cursor: pointer;
+}
+
+/* Estilo de la sección de información */
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+/* Estilo de los títulos de información */
+.info-titulo {
+  display: flex;
+  gap: 2rem;
+  font-weight: bold;
+}
+
+/* Estilo de las celdas de la tabla */
+.tabla th,
+.tabla td {
+  padding: 1rem;
+  border: 0.1rem solid #ccc;
+}
+
+/* Estilo del contenedor del ID */
+.tabla td.id-container {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Estilo del contenedor del checkbox */
+.tabla td.checkbox-container {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Estilo de los títulos de la tabla */
+.tabla th {
+  background-color: #f0f0f0;
+}
+
+/* Estilo de los botones de acción */
+.tabla button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: darkred;
+  color: white;
+  cursor: pointer;
+}
