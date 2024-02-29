@@ -64,6 +64,23 @@ body {
   font-weight: bold;
 }
 
+/* Estilo del contenedor de conteo */
+.conteo {
+  margin-top: 1rem; /* Espacio superior */
+}
+
+/* Estilo de los párrafos en el contenedor de conteo */
+.conteo p {
+  margin: 0.5rem 0; /* Espacio entre párrafos */
+}
+
+/* Estilo de los números de conteo */
+.conteo #total,
+.conteo #realizadas {
+  font-weight: bold; /* Texto en negrita */
+  color: darkgreen; /* Color de texto */
+}
+
 /* Estilo de las celdas de la tabla */
 .tabla th,
 .tabla td {
