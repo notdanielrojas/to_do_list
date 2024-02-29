@@ -18,6 +18,11 @@ renderList(tareas);
 btnAgregar.addEventListener("click", () => {
   // Obtenemos el nombre de la tarea del input
   const nombreTarea = tareaInput.value;
+  if (nombreTarea === "") {
+    // Si el input está vacío, mostramos un mensaje de error
+    alert("No has escrito ninguna tarea");
+    return; // Salimos de la función para evitar agregar una tarea vacía
+  }
   // Obtener el ID de la última tarea agregada
   let lastId = 0;
   if (tareas.length > 0) {
