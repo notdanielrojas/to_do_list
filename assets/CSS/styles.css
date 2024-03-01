@@ -139,10 +139,6 @@ body {
   .info {
     flex-direction: column; /* Dirección de flexbox en columna */
   }
-
- #nuevaTarea input::placeholder {
-    content: "Ingrese Tarea"; /* Placeholder modificado */
-  }
 }
 
 /* Media query para pantallas entre 321px y 768px */
