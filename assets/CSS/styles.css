@@ -140,7 +140,7 @@ body {
     flex-direction: column; /* Dirección de flexbox en columna */
   }
 
-  .input input::placeholder {
+ #nuevaTarea input::placeholder {
     content: "Ingrese Tarea"; /* Placeholder modificado */
   }
 }
