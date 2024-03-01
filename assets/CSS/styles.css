@@ -9,6 +9,7 @@ body {
   background-attachment: fixed;
   background-position: center;
 }
+
 /* Centra el contenido verticalmente */
 .contenedor {
   display: flex;
@@ -117,4 +118,48 @@ body {
   background-color: darkred;
   color: white;
   cursor: pointer;
+}
+
+/* Media query para pantallas de hasta 320px */
+@media only screen and (max-width: 320px) {
+  .to-do {
+    width: 95%;
+    padding: 1rem; /* Ajuste del espaciado */
+  }
+
+  .tabla th,
+  .tabla td {
+    padding: 0.5rem; /* Ajuste del espaciado */
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+  .input input::placeholder {
+    content: "Ingrese Tarea"; /* Placeholder modificado */
+  }
+}
+
+/* Media query para pantallas entre 321px y 768px */
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+  .to-do {
+    width: 90%;
+    padding: 2rem; /* Ajuste del espaciado */
+  }
+
+  .contenedor {
+    flex-direction: column;
+  }
+
+  .tabla {
+    overflow-x: auto;
+  }
+}
+
+/* Media query para pantallas entre 769px y 992px */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .to-do {
+    width: 80%;
+  }
 }
