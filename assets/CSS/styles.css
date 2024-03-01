@@ -1,123 +1,122 @@
 /* Imagen de fondo */
 body {
-  background-image: url("../img/background.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+  background-image: url("../img/background.jpg"); /* URL de la imagen de fondo */
+  -webkit-background-size: cover; /* Ajuste del tamaño de la imagen para navegadores WebKit */
+  -moz-background-size: cover; /* Ajuste del tamaño de la imagen para navegadores Mozilla */
+  -o-background-size: cover; /* Ajuste del tamaño de la imagen para navegadores Opera */
+  background-size: cover; /* Ajuste del tamaño de la imagen para otros navegadores */
+  background-repeat: no-repeat; /* No repetir la imagen de fondo */
+  background-attachment: fixed; /* Fijar la imagen de fondo */
+  background-position: center; /* Posición de la imagen de fondo en el centro */
 }
 
 /* Centra el contenido verticalmente */
 .contenedor {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 90vh;
+  display: flex; /* Usar flexbox para el diseño */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  height: 90vh; /* Altura del contenedor del 90% del viewport */
 }
 
 /* Estilo del área de la lista de tareas */
 .to-do {
-  padding: 3rem;
-  border: 0.2rem solid black;
-  border-radius: 1rem;
-  width: 70%;
-  max-width: 80rem;
-  /* Glassmorphism */
-  background: rgba(255, 255, 255, 0.6);
-  border-radius: 1.6rem;
-  box-shadow: 0 0.4rem 3rem rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(0.5rem);
-  -webkit-backdrop-filter: blur(0.5rem);
-  border: 1px solid rgba(255, 255, 255, 0.3); /* Color de fondo con opacidad del 80% */
+  padding: 3rem; /* Espaciado interno */
+  border: 0.2rem solid black; /* Borde sólido de 0.2rem de grosor en negro */
+  border-radius: 1rem; /* Borde redondeado */
+  width: 70%; /* Ancho del área de la lista de tareas */
+  max-width: 80rem; /* Ancho máximo */
+  background: rgba(255, 255, 255, 0.6); /* Fondo con opacidad */
+  border-radius: 1.6rem; /* Borde redondeado */
+  box-shadow: 0 0.4rem 3rem rgba(0, 0, 0, 0.1); /* Sombra */
+  backdrop-filter: blur(0.5rem); /* Filtro de desenfoque */
+  -webkit-backdrop-filter: blur(0.5rem); /* Filtro de desenfoque para WebKit */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Borde con opacidad */
 }
 
 /* Estilo del campo de entrada de nueva tarea */
 .input input {
-  width: calc(100% - 10rem); /* Tamaño del input ajustado para el botón */
-  height: 3rem;
-  padding: 0.5rem;
-  border: 0.1rem solid #ccc;
-  border-radius: 0.5rem;
-  margin-right: 1rem;
+  width: calc(100% - 10rem); /* Ancho del input */
+  height: 3rem; /* Altura del input */
+  padding: 0.5rem; /* Espaciado interno */
+  border: 0.1rem solid #ccc; /* Borde sólido de 0.1rem de grosor en color gris */
+  border-radius: 0.5rem; /* Borde redondeado */
+  margin-right: 1rem; /* Margen derecho */
 }
 
 /* Estilo del botón de agregar tarea */
 .input button {
-  height: 3rem;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 0.5rem;
-  background-color: darkgreen;
-  color: white;
-  cursor: pointer;
+  height: 3rem; /* Altura del botón */
+  padding: 0.5rem 1rem; /* Espaciado interno */
+  border: none; /* Sin borde */
+  border-radius: 0.5rem; /* Borde redondeado */
+  background-color: darkgreen; /* Color de fondo oscuro */
+  color: white; /* Color de texto blanco */
+  cursor: pointer; /* Cursor de puntero */
 }
 
 /* Estilo de la sección de información */
 .info {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 2rem;
+  display: flex; /* Usar flexbox para el diseño */
+  justify-content: space-between; /* Distribuir elementos uniformemente */
+  margin-top: 2rem; /* Margen superior */
 }
 
 /* Estilo de los títulos de información */
 .info-titulo {
-  display: flex;
-  gap: 2rem;
-  font-weight: bold;
+  display: flex; /* Usar flexbox para el diseño */
+  gap: 2rem; /* Espaciado entre elementos */
+  font-weight: bold; /* Texto en negrita */
 }
 
 /* Estilo del contenedor de conteo */
 .conteo {
-  margin-top: 1rem; /* Espacio superior */
+  margin-top: 1rem; /* Margen superior */
 }
 
 /* Estilo de los párrafos en el contenedor de conteo */
 .conteo p {
-  margin: 0.5rem 0; /* Espacio entre párrafos */
+  margin: 0.5rem 0; /* Espaciado entre párrafos */
 }
 
 /* Estilo de los números de conteo */
 .conteo #total,
 .conteo #realizadas {
   font-weight: bold; /* Texto en negrita */
-  color: darkgreen; /* Color de texto */
+  color: darkgreen; /* Color de texto verde oscuro */
 }
 
 /* Estilo de las celdas de la tabla */
 .tabla th,
 .tabla td {
-  padding: 1rem;
-  border: 0.1rem solid #ccc;
+  padding: 1rem; /* Espaciado interno */
+  border: 0.1rem solid #ccc; /* Borde sólido de 0.1rem de grosor en color gris */
 }
 
 /* Estilo del contenedor del ID */
 .tabla td.id-container {
-  text-align: center;
-  vertical-align: middle;
+  text-align: center; /* Alineación centrada */
+  vertical-align: middle; /* Alineación vertical centrada */
 }
 
 /* Estilo del contenedor del checkbox */
 .tabla td.checkbox-container {
-  text-align: center;
-  vertical-align: middle;
+  text-align: center; /* Alineación centrada */
+  vertical-align: middle; /* Alineación vertical centrada */
 }
 
 /* Estilo de los títulos de la tabla */
 .tabla th {
-  background-color: #f0f0f0;
+  background-color: #f0f0f0; /* Color de fondo gris claro */
 }
 
 /* Estilo de los botones de acción */
 .tabla button {
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 0.5rem;
-  background-color: darkred;
-  color: white;
-  cursor: pointer;
+  padding: 0.5rem 1rem; /* Espaciado interno */
+  border: none; /* Sin borde */
+  border-radius: 0.5rem; /* Borde redondeado */
+  background-color: darkred; /* Color de fondo rojo oscuro */
+  color: white; /* Color de texto blanco */
+  cursor: pointer; /* Cursor de puntero */
 }
 
 /* Media query para pantallas de hasta 320px */
@@ -128,7 +127,7 @@ body {
   }
 
   .to-do {
-    width: 95%;
+    width: 95%; /* Ancho del área de la lista de tareas */
     padding: 1rem; /* Ajuste del espaciado */
   }
 
@@ -138,7 +137,7 @@ body {
   }
 
   .info {
-    flex-direction: column;
+    flex-direction: column; /* Dirección de flexbox en columna */
   }
 
   .input input::placeholder {
@@ -149,22 +148,22 @@ body {
 /* Media query para pantallas entre 321px y 768px */
 @media only screen and (min-width: 321px) and (max-width: 768px) {
   .to-do {
-    width: 90%;
+    width: 90%; /* Ancho del área de la lista de tareas */
     padding: 2rem; /* Ajuste del espaciado */
   }
 
   .contenedor {
-    flex-direction: column;
+    flex-direction: column; /* Dirección de flexbox en columna */
   }
 
   .tabla {
-    overflow-x: auto;
+    overflow-x: auto; /* Desplazamiento horizontal automático */
   }
 }
 
 /* Media query para pantallas entre 769px y 992px */
 @media only screen and (min-width: 769px) and (max-width: 992px) {
   .to-do {
-    width: 80%;
+    width: 80%; /* Ancho del área de la lista de tareas */
   }
 }

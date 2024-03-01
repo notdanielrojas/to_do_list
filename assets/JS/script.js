@@ -5,7 +5,7 @@ const btnAgregar = document.querySelector("#agregarTarea"); // Selecciona el ele
 const cuentaTareas = document.querySelector("#total"); // Selecciona el elemento con el id "total"
 const cuentaRealizadas = document.querySelector("#realizadas"); // Selecciona el elemento con el id "realizadas"
 const tareas = [
-  // Define un array de objetos que representan tareas, cada uno con un id, una descripción y un estado de completado
+  /* Define un array de objetos que representan tareas, cada una con un id, una descripción y un estado de completado */
   { id: 1, tarea: "Lavar los cubiertos", completada: false },
   { id: 2, tarea: "Sacar la basura", completada: false },
   { id: 3, tarea: "Barrer el patio", completada: false },
